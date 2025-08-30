@@ -3,30 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalaizer -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Bussines Promotion</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="images/logo.png" alt="Logo Image" width="40" />Product</a
-        >
+    <header class="header">
+      <div class="header-container">
+        <nav class="header-navigation">
+          <a class="header-logo" href="./index.html"
+            ><img
+              class="header-img-logo"
+              src="images/logo.png"
+              alt="Logo Image"
+              width="40"
+            />Product
+          </a>
 
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="./resources.html">Resources</a></li>
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="./index.html">Product</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="./customers.html">Customers</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="./resources.html">Resources</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-btn-list">
+          <li class="header-btn-item">
+            <button class="header-btn-sing-in" type="button">Sign In</button>
+          </li>
+          <li class="header-btn-item">
+            <button class="header-btn-sing-up" type="button">Sign Up</button>
+          </li>
         </ul>
-      </nav>
-
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      </div>
     </header>
+
     <main>
-      <section>
+      <section class="">
         <h1>Work at the speed of thought</h1>
         <p>
           Tools, tutorials, design and innovation experts, all in one place! The
