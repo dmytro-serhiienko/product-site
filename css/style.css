@@ -602,11 +602,65 @@ img {
 
 /* #endregion */
 
+/* #region section JOIN */
+
+.join {
+  display: flex;
+  justify-content: center;
+}
+
+.join-global-container {
+  margin-top: 100px;
+  background: #02897a;
+  border-radius: 32px;
+  width: 968px;
+  height: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-text-container {
+}
+
+.join-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.514;
+  color: #fff;
+  max-width: 510px;
+  margin-bottom: 46px;
+}
+
+.join-btn {
+  font-weight: 600;
+  font-size: 20px;
+  color: #02897a;
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.join-img {
+  width: 351px;
+  height: 331px;
+}
+/* #endregion */
+
 /* #region FOOTER */
 .footer {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-global-container {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  justify-content: center;
 }
 
 .footer-logo-social {
@@ -617,6 +671,9 @@ img {
   font-size: 30px;
   line-height: 0.93333;
   color: #173a56;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .footer-img-logo {
@@ -625,6 +682,9 @@ img {
 }
 
 .footer-social-list {
+  display: flex;
+  margin-top: 18px;
+  gap: 16px;
 }
 
 .footer-logo-social-item {
@@ -634,6 +694,7 @@ img {
 }
 
 .footer-social-img {
+  width: 40px;
 }
 
 .footer-resource-container {
@@ -644,6 +705,9 @@ img {
   font-size: 20px;
   line-height: 1.5;
   color: #22343d;
+  margin-bottom: 8px;
+  margin-left: 146px;
+  margin-right: 156px;
 }
 
 .footer-resource-list {
@@ -657,6 +721,8 @@ img {
   font-size: 16px;
   line-height: 2.1875;
   color: #22343d;
+  margin-left: 146px;
+  margin-right: 156px;
 }
 
 .footer-legal-container {
@@ -667,6 +733,7 @@ img {
   font-size: 20px;
   line-height: 1.5;
   color: #22343d;
+  margin-bottom: 8px;
 }
 
 .footer-legal-list {
@@ -687,6 +754,8 @@ img {
   font-size: 20px;
   line-height: 1.5;
   color: #22343d;
+  max-width: 280px;
+  margin-left: 83px;
 }
 
 .footer-newsletter-btn {
@@ -699,6 +768,8 @@ img {
   background: #02897a;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+  margin-left: 83px;
 }
 
 .footer-last-text {
@@ -706,5 +777,9 @@ img {
   font-size: 16px;
   line-height: 1.875;
   color: #22343d;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 /* #endregion */
