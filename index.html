@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <!-- normalaizer -->
@@ -24,47 +24,46 @@
     <title>Bussines Promotion</title>
   </head>
   <body>
-    <head er class="header">
-      <div class="container header-container">
-        <nav class="header-navigation">
-          <a class="header-logo" href="./index.html"
-            ><img
-              class="header-img-logo"
-              src="images/logo.png"
-              alt="Logo Image"
-              width="40"
-            />Product
-          </a>
-
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="./index.html">Product</a>
+    <header class="main-header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="./index.html" class="main-header-logo"
+            ><img src="./images/logo.png" alt="logo" /> Product</a
+          >
+          <ul class="main-header-list">
+            <li class="main-header-item">
+              <a href="./index.html" class="main-header-link current"
+                >Product</a
+              >
             </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="./pricing.html">Pricing</a>
+            <li class="main-header-item">
+              <a href="./pricing.html" class="main-header-link">Pricing</a>
             </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="./customers.html">Customers</a>
+            <li class="main-header-item">
+              <a href="./customers.html" class="main-header-link">Customers</a>
             </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="./resources.html">Resources</a>
+            <li class="main-header-item">
+              <a href="./resourses.html" class="main-header-link">Resources</a>
             </li>
           </ul>
         </nav>
-
-        <ul class="header-btn-list">
-          <li class="header-btn-item">
-            <button class="header-btn-sing-in" type="button">Sign In</button>
+        <ul class="main-header-list-btn">
+          <li class="main-header-item-btn">
+            <button type="button" class="main-header-btn sign-in">
+              Sign In
+            </button>
           </li>
-          <li class="header-btn-item">
-            <button class="header-btn-sing-up" type="button">Sign Up</button>
+          <li class="main-header-item-btn">
+            <button type="button" class="main-header-btn sign-up">
+              Sign Up
+            </button>
           </li>
         </ul>
       </div>
-    </head>
+    </header>
 
     <main>
-      <section class="section presentation">
+      <section class="presentation">
         <div class="container presentation-global-container">
           <div class="presentation-container">
             <h1 class="presentation-tite">Work at the speed of thought</h1>
@@ -82,6 +81,12 @@
 
               <li class="presentation-btn-item">
                 <button class="presentation-btn-watch" type="button">
+                  <svg class="svg-presentation" width="20" height="18">
+                    <use
+                      class="svg"
+                      href="./images/icons.svg#icon-triangle"
+                    ></use>
+                  </svg>
                   Watch the Video
                 </button>
               </li>
@@ -97,35 +102,51 @@
         </div>
       </section>
 
-      <section class="section product">
-        <div class="product-global-container">
+      <section class="product">
+        <div class="container">
           <h2 class="product-section-title">
             Product was Built Specifically for You
           </h2>
           <ul class="product-list">
             <li class="product-item">
-              <div class="green"></div>
+              <div class="product-svg-box green">
+                <svg width="11" height="18">
+                  <use href="/images/icons.svg#icon-cursor"></use>
+                </svg>
+              </div>
               <h3 class="product-title">First click tests</h3>
               <p class="product-text">
                 While most people enjoy casino gambling,
               </p>
             </li>
             <li class="product-item">
-              <div class="blue"></div>
+              <div class="product-svg-box blue">
+                <svg width="18" height="18">
+                  <use href="/images/icons.svg#icon-wave"></use>
+                </svg>
+              </div>
               <h3 class="product-title">Design surveys</h3>
               <p class="product-text">
                 Sports betting, lottery and bingo playing for the fun
               </p>
             </li>
             <li class="product-item">
-              <div class="violet"></div>
+              <div class="product-svg-box violet">
+                <svg width="16" height="18">
+                  <use href="/images/icons.svg#icon-heard"></use>
+                </svg>
+              </div>
               <h3 class="product-title">Preference tests</h3>
               <p class="product-text">
                 The Myspace page defines the individual.
               </p>
             </li>
             <li class="product-item">
-              <div class="red"></div>
+              <div class="product-svg-box red">
+                <svg width="14" height="18">
+                  <use href="/images/icons.svg#icon-time"></use>
+                </svg>
+              </div>
               <h3 class="product-title">Five second tests</h3>
               <p class="product-text">
                 Personal choices and the overall personality of the person.
@@ -136,8 +157,8 @@
         </div>
       </section>
 
-      <section class="section management">
-        <div class="management-global-container">
+      <section class="management">
+        <div class="container">
           <div class="management-text-container">
             <h2 class="management-main-title">
               <span class="multi-span-title">Effortless Validation for</span>
@@ -177,8 +198,8 @@
         </div>
       </section>
 
-      <section class="section support">
-        <div class="support-global-container">
+      <section class="support">
+        <div class="container">
           <div class="support-img-container">
             <img
               class="support-img"
@@ -197,19 +218,36 @@
               characteristics, traits, personal choices and the overall
               personality of the person.
             </p>
+
             <ul class="support-list">
               <li class="support-item">
+                <div class="support-box">
+                  <svg width="16" height="12">
+                    <use href="./images/icons.svg#icon-done"></use>
+                  </svg>
+                </div>
                 <p class="support-item-text">
                   Never worry about overpaying for your energy again.
                 </p>
               </li>
+
               <li class="support-item">
+                <div class="support-box">
+                  <svg width="16" height="12">
+                    <use href="./images/icons.svg#icon-done"></use>
+                  </svg>
+                </div>
                 <p class="support-item-text">
                   We will only switch you to energy companies that we trust and
                   will treat you right
                 </p>
               </li>
               <li class="support-item">
+                <div class="support-box">
+                  <svg width="16" height="12">
+                    <use href="./images/icons.svg#icon-done"></use>
+                  </svg>
+                </div>
                 <p class="support-item-text">
                   We track the markets daily and know where the savings are.
                 </p>
@@ -219,8 +257,8 @@
         </div>
       </section>
 
-      <section>
-        <div class="opti-global-container">
+      <section class="opti">
+        <div class="container">
           <div class="opti-text-container">
             <h2 class="opti-main-title">
               <span class="opti-span-title">Optimisation for</span>Collaborative
@@ -258,8 +296,8 @@
         </div>
       </section>
 
-      <section class="section expert">
-        <div class="expert-global-container">
+      <section class="expert">
+        <div class="container">
           <div class="expert-main-container">
             <h2 class="expert-title">Quick & Easy Process</h2>
             <p class="expert-text">
@@ -320,8 +358,8 @@
         </div>
       </section>
 
-      <section class="section strategi">
-        <div class="strategi-global-container">
+      <section class="strategi">
+        <div class="container">
           <h2 class="strategi-title">Contents Strategies</h2>
           <p class="strategi-text">
             We focus on ergonomics and meeting you where you work. It's only a
@@ -385,57 +423,59 @@
         </div>
       </section>
 
-      <section>
-        <h2>Price Table</h2>
-        <p>We offer competitive price</p>
-
-        <ul>
-          <li>
-            <h3>Free</h3>
-            <p>Brief price description</p>
-            <p>0</p>
-            <p>$</p>
-            <p>Per/month</p>
-            <ul>
-              <li>Only 2 Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
-
-          <li>
-            <h3>Standard</h3>
-            <p>Brief price description</p>
-            <p>5</p>
-            <p>$</p>
-            <p>Per/month</p>
-            <ul>
-              <li>5+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
-
-          <li>
-            <h3>Premium</h3>
-            <p>Brief price description</p>
-            <p>10</p>
-            <p>$</p>
-            <p>Per/month</p>
-            <ul>
-              <li>10+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
-        </ul>
+      <section class="price">
+        <div class="container">
+          <h2 class="price-title">Price Table</h2>
+          <p class="price-text">We offer competitive price</p>
+  
+          <ul class="price-list">
+            <li class="price-list-item">
+              <h3 class="price-plan">Free</h3>
+              <p class="price-dsc">Brief price description</p>
+              <p class="price-money">0</p>
+              <p class="price-usa">$</p>
+              <p class="price-month">Per/month</p>
+              <ul class="price-list-operators">
+                <li class="price-operators">Only 2 Operators</li>
+                <li class="price-operators">Notifications</li>
+                <li class="price-operators">Landing Pages</li>
+              </ul>
+              <button class="price-btn" type="button">Order Now</button>
+            </li>
+  
+            <li class="price-list-item">
+              <h3 class="price-plan">Standard</h3>
+              <p class="price-dsc">Brief price description</p>
+              <p class="price-money">5</p>
+              <p class="price-usa">$</p>
+              <p class="price-month">Per/month</p>
+              <ul class="price-list-operators">
+                <li class="price-operators">5+ Operators</li>
+                <li class="price-operators">Notifications</li>
+                <li class="price-operators">Landing Pages</li>
+              </ul>
+              <button class="price-btn" type="button">Order Now</button>
+            </li>
+  
+            <li class="price-list-item">
+              <h3 class="price-plan">Premium</h3>
+              <p class="price-dsc">Brief price description</p>
+              <p class="price-money">10</p>
+              <p class="price-usa">$</p>
+              <p class="price-month">Per/month</p>
+              <ul class="price-list-operators">
+                <li class="price-operators">10+ Operators</li>
+                <li class="price-operators">Notifications</li>
+                <li class="price-operators">Landing Pages</li>
+              </ul>
+              <button class="price-btn" type="button">Order Now</button>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="client">
-        <div class="container client-container">
+        <div class="container">
           <h2 class="client-title">What Clients Say</h2>
           <p class="client-text">
             Problems trying to resolve the conflict between the two major realms
@@ -443,62 +483,63 @@
           </p>
 
           <ul class="client-list">
-            <div class="clien-box">
               <li class="client-item">
                 <p class="client-item-text">
                   Product helps you see how many more days you need to work to
                   reach your financial goal.
                 </p>
-                <img
-                  class="client-item-img"
-                  src="images/say1.png"
-                  alt="Wahid Ari"
-                  width="50"
-                />
-                <h3 class="client-item-title">Wahid Ari</h3>
-                <p class="client-item-position">Designer</p>
+                <div class="client-box">
+                  <img
+                    class="client-item-img"
+                    src="images/say1.png"
+                    alt="Wahid Ari"
+                    width="50"
+                  />
+                  <h3 class="client-item-title">Wahid Ari</h3>
+                  <p class="client-item-position">Designer</p>
+                </div>
               </li>
-            </div>
 
-            <div class="clien-box">
               <li class="client-item">
                 <p class="client-item-text">
                   Product helps you see how many more days you need to work to
                   reach your financial goal.
                 </p>
-                <img
-                  class="client-item-img"
-                  src="images/say2.png"
-                  alt="Wahid Ari"
-                  width="50"
-                />
-                <h3 class="client-item-title">Wahid Ari</h3>
-                <p class="client-item-position">Designer</p>
+               <div class="client-box">
+                  <img
+                    class="client-item-img"
+                    src="images/say2.png"
+                    alt="Wahid Ari"
+                    width="50"
+                  />
+                  <h3 class="client-item-title">Wahid Ari</h3>
+                  <p class="client-item-position">Designer</p>
+               </div>
               </li>
-            </div>
 
-            <div class="clien-box">
               <li class="client-item">
                 <p class="client-item-text">
                   Product helps you see how many more days you need to work to
                   reach your financial goal.
                 </p>
-                <img
-                  class="client-item-img"
-                  src="images/say3.png"
-                  alt="Wahid Ari"
-                  width="50"
-                />
-                <h3 class="client-item-title">Wahid Ari</h3>
-                <p class="client-item-position">Designer</p>
+                <div class="client-box">
+                  <img
+                    class="client-item-img"
+                    src="images/say3.png"
+                    alt="Wahid Ari"
+                    width="50"
+                  />
+                  <h3 class="client-item-title">Wahid Ari</h3>
+                  <p class="client-item-position">Designer</p>
+                </div>
               </li>
-            </div>
           </ul>
         </div>
-      </section>
+              </section>
 
-      <section class="section join">
-        <div class="join-global-container">
+
+        <section class="join">
+        <div class="join-container">
           <div class="join-text-container">
             <h2 hidden>Promo</h2>
             <p class="join-text">
@@ -517,7 +558,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-global-container">
+      <div class="container">
         <div class="footer-logo-social">
           <a class="footer-logo" href="./index.html"
             ><img
@@ -527,40 +568,38 @@
               width="40"
             />Product</a
           >
-
           <ul class="footer-social-list">
-            <li class="footer-logo-social-item">
-              <a class="footer-social-link" href="">
-                <img
-                  class="footer-social-img"
-                  src="images/instagram.png"
-                  alt="Instagram Vector Logo"
-                  width="40"
-                />
+          <li class="footer-social-item">
+            
+              <div class="footer-social-box">
+                <a href="">
+                  <svg class="footer-social-svg" width="24" height="24">
+                    <use href="/images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+        
+          </li>
+          <li class="footer-social-item">
+            <div class="footer-social-box">
+              <a href="">
+                <svg class="footer-social-svg" width="24" height="24">
+                  <use href="/images/icons.svg#icon-facebook"></use>
+                </svg>
               </a>
-            </li>
-            <li class="footer-logo-social-item">
-              <a class="footer-social-link" href="">
-                <img
-                  class="footer-social-img"
-                  src="images/facebook.png"
-                  alt="Facebook Vector Logo"
-                  width="40"
-                />
+            </div>
+          </li>
+          <li class="footer-social-item">
+            <div class="footer-social-box">
+              <a href="">
+                <svg class="footer-social-svg" width="24" height="24">
+                  <use href="/images/icons.svg#icon-twitter"></use>
+                </svg>
               </a>
-            </li>
-            <li class="footer-logo-social-item">
-              <a class="footer-social-link" href="">
-                <img
-                  class="footer-social-img"
-                  src="images/twitter.png"
-                  alt="Twitter Vector Logo"
-                  width="40"
-                />
-              </a>
-            </li>
-          </ul>
+            </div>
+          </li>
         </div>
+      </ul>
 
         <div class="footer-resource-container">
           <p class="footer-resource-text">Resource</p>
