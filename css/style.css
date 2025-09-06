@@ -82,6 +82,9 @@ button {
   font-size: 16px;
   line-height: 1.75;
   color: #22343d;
+  padding-bottom: 26px;
+  padding-top: 26px;
+  display: block;
 }
 .header-btn-list {
   display: flex;
@@ -139,7 +142,7 @@ button {
   font-size: 40px;
   line-height: 1.5;
   color: #22343d;
-  padding-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .presentation-text {
@@ -147,7 +150,7 @@ button {
   font-size: 18px;
   line-height: 1.55556;
   color: #22343d;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 .presentation-btn-list {
