@@ -247,6 +247,39 @@ button {
   border: none;
   background: #02897a;
 }
+
+.green {
+  background: #02897a;
+  border-radius: 19px;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 26px;
+}
+
+.blue {
+  background: #4d8dff;
+  border-radius: 19px;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 26px;
+}
+
+.violet {
+  background: #740a76;
+  border-radius: 19px;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 26px;
+}
+
+.red {
+  background: #f03e3d;
+  border-radius: 19px;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 26px;
+}
+
 /* #endregion */
 
 /* #region section Management */
