@@ -85,7 +85,17 @@ button {
   padding-bottom: 26px;
   padding-top: 26px;
   display: block;
+
+  transition-property: background-color, transform;
+  transition-duration: 300ms;
+  transition-timing-function: easy;
+  transition-delay: 0;
 }
+
+.header-menu-link:hover {
+  transform: scale(1.1);
+}
+
 .header-btn-list {
   display: flex;
   align-items: center;
@@ -101,8 +111,20 @@ button {
   width: 105px;
   height: 42px;
   border: 1px solid #bcd0e5;
+  background: transparent;
   border-radius: 4px;
   margin-left: 73px;
+
+  transition-property: background-color, transform;
+  transition-duration: 300ms;
+  transition-timing-function: easy;
+  transition-delay: 0;
+}
+
+.header-btn-sing-in:hover {
+  transform: scale(1.1);
+  background-color: #e0dfdf;
+  color: rgb(27, 138, 236);
 }
 
 .header-btn-sing-up {
@@ -114,6 +136,17 @@ button {
   height: 42px;
   background: #02897a;
   border: none;
+
+  transition-property: background-color, transform;
+  transition-duration: 300ms;
+  transition-timing-function: easy;
+  transition-delay: 0;
+}
+
+.header-btn-sing-up:hover {
+  transform: scale(1.1);
+  background-color: #026559;
+  color: aliceblue;
 }
 /* #endregion */
 
@@ -173,6 +206,17 @@ button {
   height: 53px;
   background: #02897a;
   border: none;
+
+  transition-property: background-color, transform;
+  transition-duration: 300ms;
+  transition-timing-function: easy;
+  transition-delay: 0;
+}
+
+.presentation-btn-getstarted:hover {
+  transform: scale(1.1);
+  background-color: #026559;
+  color: aliceblue;
 }
 
 .presentation-btn-watch {
@@ -183,6 +227,16 @@ button {
   color: #02897a;
   border: none;
   background-color: transparent;
+
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: easy;
+  transition-delay: 0;
+}
+
+.presentation-btn-watch:hover {
+  transform: scale(1.1);
+  color: rgb(27, 138, 236);
 }
 
 .presentation-img {
@@ -254,6 +308,15 @@ button {
   width: 54px;
   height: 54px;
   margin-bottom: 26px;
+
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: easy;
+  transition-delay: 0;
+}
+
+.green:hover {
+  transform: ;
 }
 
 .blue {
