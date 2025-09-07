@@ -1093,7 +1093,7 @@ button {
   height: 36px;
 }
 
-.footer-social-box {
+.footer-social-item {
   background-color: #edfffc;
   border-radius: 100%;
   width: 40px;
@@ -1101,17 +1101,16 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.footer-social-box {
+
   transition-property: transform;
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
 }
 
-.footer-social-box:hover,
-.footer-social-box:focus,
-.footer-social-box:active {
+.footer-social-item:hover,
+.footer-social-item:focus,
+.footer-social-item:active {
   transform: scale(2);
 }
 
