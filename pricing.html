@@ -157,42 +157,23 @@
           />
           <ul class="product-list">
             <li class="product-item">
-              <div class="product-box">
-                <div class="product-box-svg">
-                  <svg class="product-svg" width="24" height="24">
-                    <use href="./images/"></use>
-                  </svg>
-                </div>
-                <h3 class="product-item-title">Enterpreneur</h3>
-              </div>
+              <h3 class="product-item-title">Enterpreneur</h3>
               <p class="product-item-text">
                 Product is a great way to help medium and samall enterprise
                 owners achieve their goals
               </p>
             </li>
             <li class="product-item">
-              <div class="product-box">
-                <div class="product-box-svg">
-                  <svg class="product-svg" width="24" height="24">
-                    <use href="./images/second-icons.svg#icon-blue"></use>
-                  </svg>
-                </div>
-                <h3 class="product-item-title">Accountants</h3>
-              </div>
+              <h3 class="product-item-title">Accountants</h3>
+              <!-- </div> -->
               <p class="product-item-text">
                 Whether you are working on contract with clients, or on other
                 key accounting documents, Product is for you
               </p>
             </li>
             <li class="product-item">
-              <div class="product-box">
-                <div class="product-box-svg">
-                  <svg class="product-svg" width="24" height="24">
-                    <use href="/images/second-icons.svg#icon-red"></use>
-                  </svg>
-                </div>
-                <h3 class="product-item-title">Universities</h3>
-              </div>
+              <h3 class="product-item-title">Universities</h3>
+              <!-- </div> -->
               <p class="product-item-text">
                 Organize university projects and have documents easily graded
                 online with Product
@@ -210,22 +191,12 @@
         <div class="container">
           <ul class="questions-list">
             <li class="questions-item">
-              <img
-                class="questions-img"
-                src="images/plus_circle.png"
-                alt="Plus Image"
-                width="24"
-              />
-              <p class="questions-item-text">What are my payment option?</p>
+              <p class="questions-item-text plus">
+                What are my payment option?
+              </p>
             </li>
-            <li class="questions-item minus">
-              <img
-                class="questions-img"
-                src="images/minus_circle.png"
-                alt="Minus Image"
-                width="24"
-              />
-              <p class="questions-item-text minus-text">
+            <li class="questions-item double">
+              <p class="questions-item-text minus">
                 How can I invite collaborator to platform?
               </p>
               <p class="questions-item-text-dsr">
@@ -237,22 +208,10 @@
               </p>
             </li>
             <li class="questions-item">
-              <img
-                class="questions-img"
-                src="images/plus_circle.png"
-                alt="Plus Image"
-                width="24"
-              />
-              <p class="questions-item-text">Can I upgrade my plan?</p>
+              <p class="questions-item-text plus">Can I upgrade my plan?</p>
             </li>
             <li class="questions-item">
-              <img
-                class="questions-img"
-                src="images/plus_circle.png"
-                alt="Plus Image"
-                width="24"
-              />
-              <p class="questions-item-text">
+              <p class="questions-item-text plus">
                 Can I cancel my plan at anytime?
               </p>
             </li>
@@ -291,31 +250,34 @@
           >
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <div class="footer-social-box">
-                <a href="">
-                  <svg class="footer-social-svg" width="24" height="24">
-                    <use href="/images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </div>
+              <a href="">
+                <svg class="footer-social-svg" width="24" height="24">
+                  <use
+                    class="footer-social-use"
+                    href="/images/icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="footer-social-item">
-              <div class="footer-social-box">
-                <a href="">
-                  <svg class="footer-social-svg" width="24" height="24">
-                    <use href="/images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </div>
+              <a href="">
+                <svg class="footer-social-svg" width="24" height="24">
+                  <use
+                    class="footer-social-use"
+                    href="/images/icons.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="footer-social-item">
-              <div class="footer-social-box">
-                <a href="">
-                  <svg class="footer-social-svg" width="24" height="24">
-                    <use href="/images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </div>
+              <a href="">
+                <svg class="footer-social-svg" width="24" height="24">
+                  <use
+                    class="footer-social-use"
+                    href="/images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -358,9 +320,18 @@
             knowing you're always on the best energy deal.
           </p>
 
-          <button class="footer-newsletter-btn" type="button">
-            Sign up Now
-          </button>
+          <form class="fotter-form">
+            <label class="footer-label">
+              <input
+                class="footer-input"
+                type="text"
+                placeholder="Enter your phone number"
+              />
+            </label>
+            <button class="footer-newsletter-btn" type="button">
+              Sign up Now
+            </button>
+          </form>
         </div>
       </div>
       <p class="footer-last-text">

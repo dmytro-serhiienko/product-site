@@ -297,6 +297,10 @@ button {
   transform: scale(1.1);
 }
 
+.presentation-svg {
+  fill: #02897a;
+}
+
 /* #endregion */
 
 /* #region section Product  */
@@ -368,7 +372,7 @@ button {
   align-items: center;
   justify-content: center;
 
-  transition-property: transform;
+  transition-property: box-shadow, transform;
   transition-duration: 200ms;
   transition-timing-function: ease;
   transition-delay: 0;
@@ -413,6 +417,9 @@ button {
   margin-bottom: 26px;
 }
 
+.product-svg-box svg {
+  fill: white;
+}
 /* #endregion */
 
 /* #region section Management */
@@ -502,28 +509,6 @@ button {
   flex-direction: column;
 }
 
-.support-box {
-  background-color: #ff9900;
-  border: 2.92px solid #fff;
-  border-radius: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 35px;
-  height: 35px;
-  margin-right: 30px;
-}
-
-.support-item:nth-child(2) .support-box {
-  background-color: #f03e3d;
-  margin-right: 30px;
-}
-
-.support-item:nth-child(3) .support-box {
-  background-color: #4d8dff;
-  margin-right: 30px;
-}
-
 .support-main-title {
   font-weight: 700;
   font-size: 32px;
@@ -564,6 +549,30 @@ button {
   line-height: 1.62;
   color: #22343d;
   display: flex;
+}
+
+.support-item-text::before {
+  content: "";
+  border: 2.92px solid #fff;
+  border-radius: 14px;
+  width: 35px;
+  height: 35px;
+  background-color: #f90;
+
+  background-image: url(/images/done.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 12px;
+
+  margin-right: 30px;
+}
+
+.support-item:nth-child(2) .support-item-text::before {
+  background-color: #f03e3d;
+}
+
+.support-item:nth-child(3) .support-item-text::before {
+  background-color: #4d8dff;
 }
 
 /* #endregion */
@@ -1119,6 +1128,11 @@ button {
   display: flex;
   margin-top: 18px;
   gap: 16px;
+}
+
+.footer-social-use {
+  stroke: #02897a;
+  fill: transparent;
 }
 
 .footer-resource-text {
