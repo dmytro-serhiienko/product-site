@@ -1227,6 +1227,9 @@ button {
   color: #5cbab4;
 }
 
+.footer-input:focus-within {
+}
+
 .footer-newsletter-btn {
   width: 131px;
   height: 39px;
