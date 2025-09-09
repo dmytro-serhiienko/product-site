@@ -228,6 +228,9 @@ button {
   display: flex;
 }
 
+.great-list-item {
+}
+
 .great-end-text {
   font-weight: 400;
   font-size: 14px;
@@ -242,6 +245,9 @@ button {
 .person-container {
   display: flex;
   align-items: center;
+}
+
+.person-img {
 }
 
 /* #region section STRATEGI */
@@ -259,6 +265,7 @@ button {
   font-size: 34px;
   color: #22343d;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .strategi-text {
@@ -266,13 +273,14 @@ button {
   font-size: 16px;
   line-height: 1.62;
   color: #22343d;
-  margin-bottom: 40px;
-  max-width: 465px;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 .strategi-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .strategi-list-container {
@@ -310,6 +318,35 @@ button {
 }
 
 /* #endregion */
+/* ! */
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 150px;
+}
+
+.contact-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.67647;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #252b42;
+  margin-bottom: 17px;
+}
+
+.contact-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #374754;
+  max-width: 332px;
+}
 
 /* ! */
 /* #region FOOTER */
@@ -359,6 +396,11 @@ button {
   display: flex;
   margin-top: 18px;
   gap: 16px;
+}
+
+.footer-social-use {
+  stroke: #02897a;
+  fill: transparent;
 }
 
 .footer-resource-text {
