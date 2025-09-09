@@ -559,7 +559,7 @@ button {
   height: 35px;
   background-color: #f90;
 
-  background-image: url(./images/done.svg);
+  background-image: url(../images/done.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 12px;
