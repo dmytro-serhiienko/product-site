@@ -189,15 +189,12 @@ button {
   margin-bottom: 24px;
 }
 
-.great-label {
-  /* display: flex; */
-}
-
 .great-input {
   border: 1px solid #eaeaea;
   border-radius: 100px;
   width: 469px;
   height: 66px;
+  padding-left: 27px;
 }
 
 .great-input::placeholder {
@@ -206,8 +203,6 @@ button {
   line-height: 1;
   letter-spacing: -0.03em;
   color: #22343d;
-
-  padding-left: 27px;
 }
 
 .great-box-form {
@@ -333,8 +328,35 @@ button {
   padding-bottom: 40px;
 }
 
+.strategi-more-link {
+  margin: 0 auto;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.44444;
+  color: #22343d;
+
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-delay: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+  }
+}
+
+.strategi-more-svg {
+  fill: #2e3a59;
+  margin-left: 8px;
+}
+
 /* #endregion */
-/* ! */
 .contact .container {
   display: flex;
   flex-direction: column;
@@ -414,6 +436,7 @@ button {
   padding: 23px 20px;
   width: 768px;
   height: 193px;
+  resize: none;
 
   background-color: #f5f5f5;
 
@@ -542,7 +565,6 @@ button {
   line-height: 1.5;
   color: #22343d;
   max-width: 280px;
-  margin-bottom: 30px;
 }
 
 .footer-last-text {
