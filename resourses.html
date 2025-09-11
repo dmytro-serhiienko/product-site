@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <!-- normalaizer -->
     <link
       rel="stylesheet"
@@ -63,7 +64,6 @@
     </header>
 
     <main>
-      <!-- ! -->
       <section class="great">
         <div class="container">
           <div class="dscr-main-container">
@@ -72,8 +72,9 @@
               Build better customer relationships easily messaging that provides
               a more personal experience for you and your customers.
             </p>
-            <form class="great-form" action="">
-              <label class="great-label">
+            <form class="great-form">
+              <label class="great-label"></label>
+              <div class="great-box-form">
                 <input
                   class="great-input"
                   type="text"
@@ -81,36 +82,38 @@
                   placeholder="Enter your email adress"
                 />
                 <button class="gerat-btn" type="submit">Join Now</button>
-              </label>
+              </div>
             </form>
 
             <div class="person-container">
-              <ul class="great-list">
-                <li class="great-list-item">
-                  <img
-                    class="person-img"
-                    src="images/Oval.png"
-                    alt="Face Image"
-                    width="50"
-                  />
-                </li>
-                <li class="great-list-item">
-                  <img
-                    class="person-img"
-                    src="images/Oval-1.png"
-                    alt="Face Image"
-                    width="50"
-                  />
-                </li>
-                <li class="great-list-item">
-                  <img
-                    class="person-img"
-                    src="images/Oval-2.png"
-                    alt="Face Image"
-                    width="50"
-                  />
-                </li>
-              </ul>
+              <div class="person-box-img">
+                <ul class="great-list">
+                  <li class="great-list-item">
+                    <img
+                      class="person-img"
+                      src="images/Oval.png"
+                      alt="Face Image"
+                      width="50"
+                    />
+                  </li>
+                  <li class="great-list-item">
+                    <img
+                      class="person-img"
+                      src="images/Oval-1.png"
+                      alt="Face Image"
+                      width="50"
+                    />
+                  </li>
+                  <li class="great-list-item">
+                    <img
+                      class="person-img"
+                      src="images/Oval-2.png"
+                      alt="Face Image"
+                      width="50"
+                    />
+                  </li>
+                </ul>
+              </div>
               <p class="great-end-text">
                 Join over <span class="great-span">4,000+</span> other
               </p>
@@ -239,7 +242,9 @@
       <section class="contact">
         <div class="container">
           <h2 class="contact-title">Contact Us</h2>
-          <p class="contact-text">Need more detailed information? Get in touch with us.</p>
+          <p class="contact-text">
+            Need more detailed information? Get in touch with us.
+          </p>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a href="">
@@ -272,11 +277,33 @@
               </a>
             </li>
           </ul>
-  
 
-
-        </section>
+          <!-- * -->
+          <div class="contact-box">
+            <form class="contact-form">
+              <p class="contact-box-title">Send a message</p>
+              <input
+                class="contact-input"
+                type="user-name"
+                name="user-name"
+                placeholder="Your Name"
+              />
+              <input
+                class="contact-input"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+              />
+              <textarea class="contact-textarea" name="user-message" id="">
+Your Message</textarea
+              >
+              <button class="contact-btn" type="submit">Send</button>
+            </form>
+          </div>
         </div>
+
+        <!-- * -->
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -357,17 +384,24 @@
         </div>
 
         <div class="footer-newsletter-container">
-          <p class="footer-newsletter-text">
-            knowing you're always on the best energy deal.
-          </p>
-
           <form class="fotter-form">
+            <p class="footer-newsletter-text">
+              knowing you're always on the best energy deal.
+            </p>
             <label class="footer-label">
-              <input
-                class="footer-input"
-                type="text"
-                placeholder="Enter your phone number"
-              />
+              <div class="footer-input-box">
+                <input
+                  class="footer-input"
+                  type="tel"
+                  placeholder="Enter your phone number"
+                />
+                <svg class="footer-form-svg" height="24" width="18">
+                  <use
+                    class="footer-form-use"
+                    href="./images/icons.svg#icon-phone"
+                  ></use>
+                </svg>
+              </div>
             </label>
             <button class="footer-newsletter-btn" type="button">
               Sign up Now

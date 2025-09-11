@@ -698,7 +698,22 @@ button {
   gap: 25px;
 }
 
+.footer-input-box {
+  position: relative;
+}
+
 .footer-label {
+}
+
+.footer-form-svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+}
+
+.footer-form-use {
+  fill: #02897a;
 }
 
 .footer-input {
@@ -709,15 +724,6 @@ button {
 
   padding: 10px 42px;
   border: 1px solid #bcd0e5;
-
-  transition-property: transform;
-  transition-duration: 300ms;
-  transition-timing-function: ease;
-  transition-delay: 0;
-}
-
-.footer-input:hover {
-  transform: scale(1.1);
 }
 
 .footer-input::placeholder {

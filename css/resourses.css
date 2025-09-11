@@ -190,7 +190,7 @@ button {
 }
 
 .great-label {
-  display: flex;
+  /* display: flex; */
 }
 
 .great-input {
@@ -210,6 +210,11 @@ button {
   padding-left: 27px;
 }
 
+.great-box-form {
+  position: relative;
+  display: inline-block; /* щоб кнопка не злітала */
+}
+
 .gerat-btn {
   font-weight: 600;
   font-size: 16px;
@@ -218,10 +223,15 @@ button {
 
   border-radius: 100px;
   padding: 24px;
-  width: 117px;
+  min-width: 117px;
   height: 50px;
 
   background: #02897a;
+
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
 }
 
 .great-list {
@@ -229,6 +239,10 @@ button {
 }
 
 .great-list-item {
+}
+
+.person-img {
+  position: relative;
 }
 
 .great-end-text {
@@ -247,8 +261,10 @@ button {
   align-items: center;
 }
 
-.person-img {
-}
+/* .person-box-img {
+  position: relative;
+  display: inline-block;
+} */
 
 /* #region section STRATEGI */
 .strategi {
@@ -347,6 +363,83 @@ button {
   color: #374754;
   max-width: 332px;
 }
+/* ? */
+.contact-box {
+  margin-top: 50px;
+}
+
+.contact-form {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 52px 50px;
+  width: 868px;
+  height: 670px;
+  background-color: transparent;
+
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.contact-box-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.375;
+  letter-spacing: 0em;
+  color: #252b42;
+
+  text-align: center;
+}
+
+.contact-input {
+  border: 1px solid #e8e8e8;
+  border-radius: 39px;
+  padding: 19px 20px;
+  width: 768px;
+  height: 54px;
+
+  background-color: #f5f5f5;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.06667;
+    letter-spacing: 0.01em;
+    color: #22343d;
+  }
+}
+
+.contact-textarea {
+  border: 1px solid #e8e8e8;
+  padding: 23px 20px;
+  width: 768px;
+  height: 193px;
+
+  background-color: #f5f5f5;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.06667;
+  letter-spacing: 0.01em;
+  color: #22343d;
+}
+
+.contact-btn {
+  border-radius: 35px;
+  padding: 18px 38px;
+  width: 145px;
+  height: 52px;
+
+  background-color: #02897a;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+/* ? */
 
 /* ! */
 /* #region FOOTER */
@@ -470,7 +563,22 @@ button {
   gap: 25px;
 }
 
+.footer-input-box {
+  position: relative;
+}
+
 .footer-label {
+}
+
+.footer-form-svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+}
+
+.footer-form-use {
+  fill: #02897a;
 }
 
 .footer-input {
@@ -481,15 +589,6 @@ button {
 
   padding: 10px 42px;
   border: 1px solid #bcd0e5;
-
-  transition-property: transform;
-  transition-duration: 300ms;
-  transition-timing-function: ease;
-  transition-delay: 0;
-}
-
-.footer-input:hover {
-  transform: scale(1.1);
 }
 
 .footer-input::placeholder {
