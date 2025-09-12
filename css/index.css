@@ -792,7 +792,6 @@ button {
 }
 
 /* #endregion */
-/* ! */
 /* #region section PRICE */
 .price {
   margin-top: 171px;
@@ -943,7 +942,6 @@ button {
 }
 
 /* #endregion */
-/* ! */
 /* #region section CLIENT */
 .client .container {
   display: flex;
@@ -1200,9 +1198,6 @@ button {
   position: relative;
 }
 
-.footer-label {
-}
-
 .footer-form-svg {
   position: absolute;
   top: 50%;
@@ -1239,9 +1234,6 @@ button {
 .footer-input:hover::placeholder,
 .footer-input:focus::placeholder {
   color: #5cbab4;
-}
-
-.footer-input:focus-within {
 }
 
 .footer-newsletter-btn {
