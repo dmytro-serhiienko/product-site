@@ -372,7 +372,7 @@ button {
   align-items: center;
   justify-content: center;
 
-  transition-property: box-shadow;
+  transition-property: box-shadow, transform;
   transition-duration: 200ms;
   transition-timing-function: ease;
   transition-delay: 0;
@@ -380,40 +380,35 @@ button {
   &:hover,
   &:focus,
   &:active {
-    box-shadow: 3px 5px 5px #dbdbdb;
+    transform: scale(1.3);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
   }
+}
+
+.green,
+.blue,
+.violet,
+.red {
+  border-radius: 19px;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 26px;
 }
 
 .green {
   background: #02897a;
-  border-radius: 19px;
-  width: 54px;
-  height: 54px;
-  margin-bottom: 26px;
 }
 
 .blue {
   background: #4d8dff;
-  border-radius: 19px;
-  width: 54px;
-  height: 54px;
-  margin-bottom: 26px;
 }
 
 .violet {
   background: #740a76;
-  border-radius: 19px;
-  width: 54px;
-  height: 54px;
-  margin-bottom: 26px;
 }
 
 .red {
   background: #f03e3d;
-  border-radius: 19px;
-  width: 54px;
-  height: 54px;
-  margin-bottom: 26px;
 }
 
 .product-svg-box svg {
