@@ -553,6 +553,7 @@ button {
   width: 35px;
   height: 35px;
   background-color: #f90;
+  flex-shrink: 0;
 
   background-image: url("../images/done.svg");
   background-repeat: no-repeat;
