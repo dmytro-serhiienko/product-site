@@ -99,7 +99,33 @@ button {
 
 .main-header-list-btn {
   display: flex;
+  align-items: center;
   gap: 21px;
+}
+
+.theme-btn {
+  background: #f3f3f3;
+  border-radius: 100px;
+  max-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+
+  transition-property: box-shadow, transform;
+  transition-duration: 300ms;
+  transition-delay: 0;
+  transition-timing-function: ease;
+}
+
+.theme-btn:hover,
+.theme-btn:focus,
+.theme-btn:active {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.theme-btn-svg {
+  fill: #02897a;
 }
 
 .main-header-btn {
