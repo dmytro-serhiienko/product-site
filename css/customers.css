@@ -46,12 +46,12 @@ button {
 .main-header .container {
   display: flex;
   align-items: center;
-  gap: 73px;
+  gap: 24px;
 }
 
 .navigation {
   display: flex;
-  gap: 237px;
+  gap: 236px;
   align-items: center;
 }
 

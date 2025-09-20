@@ -46,7 +46,7 @@ button {
 .main-header .container {
   display: flex;
   align-items: center;
-  gap: 73px;
+  gap: 24px;
 }
 
 .navigation {
@@ -111,7 +111,7 @@ button {
   display: flex;
   align-items: center;
 
-  transition-property: box-shadow, transform;
+  transition-property: box-shadow, background-color, transform;
   transition-duration: 300ms;
   transition-delay: 0;
   transition-timing-function: ease;
@@ -257,6 +257,7 @@ button {
 
 .great-list {
   display: flex;
+  margin-right: 9px;
 }
 
 .great-list-item:nth-child(2),
