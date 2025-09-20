@@ -233,11 +233,15 @@ button {
   display: flex;
 }
 
+.great-list-item:nth-child(2),
+.great-list-item:nth-child(3) {
+  margin-left: -20px;
+}
+
 .great-list-item {
 }
 
 .person-img {
-  position: relative;
 }
 
 .great-end-text {
