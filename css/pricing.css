@@ -381,7 +381,7 @@ button {
   display: flex;
   margin-bottom: 150px;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .product-title {
