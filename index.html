@@ -687,5 +687,44 @@
         Made With Love By Figmaland All Right Reserved
       </p>
     </footer>
+  <div class="backdrop">
+      <div class="modal-sing-in">
+        <form class="modal-sing-in-form" action="">
+          <p class="modal-sing-in-title">Sing In</p>
+          <label class="modal-sing-in-label" for="user-name"></label>
+          <input
+            class="modal-sing-in-input"
+            name="login"
+            type="user-name"
+            id="user-name"
+            required
+            placeholder="Username"
+          />
+
+          <label
+            class="modal-sing-in-label"
+            name="user-password"
+            for="password"
+          ></label>
+          <input
+            class="modal-sing-in-input"
+            name=""
+            type="password"
+            id="password"
+            minlength="5"
+            maxlength="12"
+            required
+            placeholder="Password"
+          />
+
+          <label class="modal-sing-in-label-checkbox">
+            <input class="modal-sing-in-input-checkbox" type="checkbox" />
+            <p class="modal-sing-in-text">Remember me</p>
+          </label>
+
+          <button class="modal-sing-in-btn" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
