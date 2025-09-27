@@ -246,6 +246,12 @@ button {
   top: 50%;
   right: 8px;
   transform: translateY(-50%);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #5cbab4;
+  }
 }
 
 .great-list {
@@ -473,6 +479,12 @@ button {
   line-height: 1;
   letter-spacing: 0.01em;
   color: #fff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #5cbab4;
+  }
 }
 
 /* !================= FOOTER ================= */
@@ -546,6 +558,12 @@ button {
   color: #22343d;
   margin-left: 146px;
   margin-right: 156px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #02897a;
+  }
 }
 
 .footer-legal-text {
@@ -561,6 +579,12 @@ button {
   font-size: 16px;
   line-height: 2.18;
   color: #22343d;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #02897a;
+  }
 }
 
 .footer-newsletter-container {
@@ -663,7 +687,6 @@ button {
 }
 
 /* !================= MODAL - HEADER - SIGN-IN =================*/
-
 .backdrop-sign-in {
   position: fixed;
   background-color: rgba(46, 47, 66, 0.4);
@@ -803,6 +826,8 @@ button {
 }
 
 .modal-sign-in-btn {
+  font-size: 18px;
+  font-weight: 500;
   border: 1px solid #bcd0e5;
   border-radius: 30px;
   width: 325px;
@@ -812,7 +837,7 @@ button {
   background-color: #02897a;
   color: white;
 
-  transition-property: transform;
+  transition-property: transform, background-color;
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
@@ -821,6 +846,7 @@ button {
   &:focus,
   &:active {
     transform: scale(1.1);
+    background-color: #5cbab4;
   }
 }
 
@@ -954,6 +980,8 @@ button {
 }
 
 .modal-sign-up-btn {
+  font-size: 18px;
+  font-weight: 500;
   border: 1px solid #bcd0e5;
   border-radius: 30px;
   width: 325px;
