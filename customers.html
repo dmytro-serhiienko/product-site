@@ -49,12 +49,20 @@
         </nav>
         <ul class="main-header-list-btn">
           <li class="main-header-item-btn">
-            <button type="button" class="main-header-btn sign-in">
+            <button
+              type="button"
+              class="main-header-btn sign-in"
+              id="open-modal-sign-in"
+            >
               Sign In
             </button>
           </li>
           <li class="main-header-item-btn">
-            <button type="button" class="main-header-btn sign-up">
+            <button
+              type="button"
+              class="main-header-btn sign-up"
+              id="open-modal-sign-up"
+            >
               Sign Up
             </button>
           </li>
@@ -246,7 +254,9 @@
                 <li class="offer-dsc-item">Asset Backed</li>
                 <li class="offer-dsc-item">Receivables Finance</li>
                 <li class="offer-dsc-item">
-                  <span class="offer-span">Find the best business product</span>
+                  <a class="offer-link" href="#"
+                    >Find the best business product</a
+                  >
                 </li>
               </ul>
             </li>
@@ -263,7 +273,9 @@
                 <li class="offer-dsc-item">Bridge</li>
                 <li class="offer-dsc-item">Development Financing</li>
                 <li class="offer-dsc-item">
-                  <span class="offer-span">Find the best business product</span>
+                  <a class="offer-link" href="#"
+                    >Find the best business product</a
+                  >
                 </li>
               </ul>
             </li>
@@ -303,7 +315,7 @@
           >
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a href="">
+              <a href="https://business.instagram.com/" target="_blank">
                 <svg class="footer-social-svg" width="24" height="24">
                   <use
                     class="footer-social-use"
@@ -313,7 +325,10 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="">
+              <a
+                href="https://www.facebook.com/legal/meta-products"
+                target="_blank"
+              >
                 <svg class="footer-social-svg" width="24" height="24">
                   <use
                     class="footer-social-use"
@@ -323,7 +338,7 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="">
+              <a href="https://business.x.com/en/products" target="_blank">
                 <svg class="footer-social-svg" width="24" height="24">
                   <use
                     class="footer-social-use"
@@ -389,7 +404,7 @@
                 </svg>
               </div>
             </label>
-            <button class="footer-newsletter-btn" type="button">
+            <button class="footer-newsletter-btn" type="submit">
               Sign up Now
             </button>
           </form>
@@ -400,45 +415,152 @@
       </p>
     </footer>
 
-    <!-- !================= MODAL - HEADER - SING-IN ================= -->
-    <div class="backdrop">
-      <div class="modal-sing-in">
-        <form class="modal-sing-in-form" action="">
-          <p class="modal-sing-in-title">Sing In</p>
-          <label class="modal-sing-in-label" for="user-name"></label>
-          <input
-            class="modal-sing-in-input"
-            name="login"
-            type="user-name"
-            id="user-name"
-            required
-            placeholder="Username"
-          />
+    <!-- !================= MODAL - HEADER - SIGN-IN-->
 
-          <label
-            class="modal-sing-in-label"
-            name="user-password"
-            for="password"
-          ></label>
-          <input
-            class="modal-sing-in-input"
-            name=""
-            type="password"
-            id="password"
-            minlength="5"
-            maxlength="12"
-            required
-            placeholder="Password"
-          />
+    <div class="backdrop-sign-in" id="modal-sign-in">
+      <div class="modal-sign-in">
+        <button
+          class="modal-sign-in-close-btn"
+          id="close-modal-sign-in"
+          type="button"
+        >
+          <svg class="modal-sign-in-close-svg" width="" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="modal-sign-in-form" action="">
+          <p class="modal-sign-in-title">Sign In</p>
 
-          <label class="modal-sing-in-label-checkbox">
-            <input class="modal-sing-in-input-checkbox" type="checkbox" />
-            <p class="modal-sing-in-text">Remember me</p>
+          <label class="modal-sign-in-label" for="user-name"></label>
+          <div class="modal-sign-in-mail-box">
+            <svg class="modal-sign-in-mail-svg" width="18" height="18">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+            <input
+              class="modal-sign-in-input"
+              name="email"
+              type="user-email"
+              id="user-email"
+              required
+              placeholder="Email"
+            />
+          </div>
+
+          <div class="modal-sign-in-password-box">
+            <svg class="modal-sign-in-password-svg" width="18" height="18">
+              <use href="./images/icons.svg#icon-key"></use>
+            </svg>
+            <label
+              class="modal-sign-in-label"
+              name="user-password"
+              for="password"
+            ></label>
+            <input
+              class="modal-sign-in-input"
+              name=""
+              type="password"
+              id="password"
+              minlength="5"
+              maxlength="12"
+              required
+              placeholder="Password"
+            />
+          </div>
+
+          <label class="modal-sign-in-label-checkbox">
+            <input class="modal-sign-in-input-checkbox" type="checkbox" />
+            <p class="modal-sign-in-text">Remember me</p>
           </label>
 
-          <button class="modal-sing-in-btn" type="submit">Login</button>
+          <button class="modal-sign-in-btn" type="submit">Login</button>
         </form>
       </div>
     </div>
+
+    <!-- !================= MODAL - HEADER - SIGN-UP-->
+    <div class="backdrop-sign-up" id="modal-sign-up">
+      <div class="modal-sign-up">
+        <button
+          class="modal-sign-up-close-btn"
+          id="close-modal-sign-up"
+          type="button"
+        >
+          <svg class="modal-sign-up-close-svg" width="" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="modal-sign-up-form" action="">
+          <p class="modal-sign-up-title">Sign Up</p>
+
+          <label class="modal-sign-up-label" for="user-name"></label>
+          <div class="modal-sign-up-mail-box">
+            <svg class="modal-sign-in-mail-svg" width="18" height="18">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+            <input
+              class="modal-sign-up-input"
+              name="login"
+              type="email"
+              id="user-email"
+              required
+              placeholder="Email"
+            />
+          </div>
+
+          <label
+            class="modal-sign-up-label"
+            name="user-password"
+            for="password"
+          ></label>
+          <div class="modal-sign-up-password-box">
+            <svg class="modal-sign-in-password-svg" width="18" height="18">
+              <use href="./images/icons.svg#icon-key"></use>
+            </svg>
+            <input
+              class="modal-sign-up-input"
+              name=""
+              type="password"
+              id="password"
+              minlength="5"
+              maxlength="12"
+              required
+              placeholder="Create password"
+            />
+          </div>
+
+          <label
+            class="modal-sign-up-label"
+            name="user-password"
+            for="password"
+          ></label>
+          <div class="modal-sign-up-password-box">
+            <svg class="modal-sign-in-password-svg" width="18" height="18">
+              <use href="./images/icons.svg#icon-key"></use>
+            </svg>
+            <input
+              class="modal-sign-up-input"
+              name=""
+              type="password"
+              id="password"
+              minlength="5"
+              maxlength="12"
+              required
+              placeholder="Confirm password"
+            />
+          </div>
+
+          <p class="modal-sign-up-text">
+            Alredy have an account?
+            <a class="modal-sign-up-link" href="#modal-sign-in">Sign In</a>
+          </p>
+
+          <button class="modal-sign-up-btn" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- * JavaScript -->
+    <script src="./java.js"></script>
+    <!-- * JavaScript -->
   </body>
 </html>

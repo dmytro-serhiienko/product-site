@@ -295,9 +295,6 @@ button {
   background: #f03e3d;
 }
 
-.product-svg {
-}
-
 .product-use {
   fill: white;
 }
@@ -331,9 +328,6 @@ button {
 
 /* #region section WORK */
 
-.work {
-}
-
 .work .container {
   display: flex;
   flex-direction: column;
@@ -354,9 +348,6 @@ button {
   align-items: flex-start;
   justify-content: center;
   max-width: 438px;
-}
-
-.work-list {
 }
 
 .work-item {
@@ -488,9 +479,6 @@ button {
   margin-bottom: 16px;
 }
 
-.offer-dsc-list {
-}
-
 .offer-dsc-item {
   font-weight: 400;
   font-size: 18px;
@@ -499,15 +487,11 @@ button {
   color: #22343d;
 }
 
-.offer-span {
+.offer-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.75;
   color: #000;
-  margin-top: 12px;
-}
-
-.osser-item-title {
 }
 
 /* ! */
@@ -690,9 +674,6 @@ button {
   position: relative;
 }
 
-.footer-label {
-}
-
 .footer-form-svg {
   position: absolute;
   top: 50%;
@@ -730,9 +711,6 @@ button {
   color: #5cbab4;
 }
 
-.footer-input:focus-within {
-}
-
 .footer-newsletter-btn {
   width: 131px;
   height: 39px;
@@ -761,19 +739,23 @@ button {
 
 /* #endregion */
 
-/* !================= MODAL - HEADER - SING-IN =================*/
+/* !================= MODAL - HEADER - SIGN-IN =================*/
 
-.backdrop {
+.backdrop-sign-in {
   position: fixed;
   background-color: rgba(46, 47, 66, 0.4);
   top: 0;
   width: 100%;
   height: 100%;
-  /* opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: none; */
+  pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .is-open {
@@ -782,17 +764,15 @@ button {
   pointer-events: auto;
 }
 
-.modal-sing-in {
+.modal-sign-in {
   width: 500px;
   min-height: 450px;
   border-radius: 40px;
   background-color: #fcfcfc;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 72px 16px 16px;
+  position: relative;
+
+  padding: 72px 16px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -801,12 +781,63 @@ button {
   justify-content: center;
 }
 
-.modal-sing-in-form {
+.modal-sign-in-close-svg {
+  fill: #02897a;
+
+  &:hover {
+    fill: #5cbab4;
+  }
+}
+
+.modal-sign-in-close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 250ms ease;
+
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-delay: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.5);
+  }
+}
+
+.modal-sign-in-mail-box,
+.modal-sign-in-password-box {
+  position: relative;
+}
+
+.modal-sign-in-mail-svg,
+.modal-sign-in-password-svg {
+  position: absolute;
+  left: 13px;
+  z-index: 1;
+  top: 40%;
+  transform: translateY(-40%);
+  fill: #02897a;
+}
+
+.modal-sign-in-form {
   display: flex;
   flex-direction: column;
 }
 
-.modal-sing-in-title {
+.modal-sign-in-title {
   text-align: center;
   margin-bottom: 20px;
 
@@ -816,10 +847,7 @@ button {
   color: #02897a;
 }
 
-.modal-sing-in-label {
-}
-
-.modal-sing-in-input {
+.modal-sign-in-input {
   border: 1px solid #bcd0e5;
   border-radius: 30px;
   width: 325px;
@@ -832,24 +860,26 @@ button {
   }
 }
 
-.modal-sing-in-input:focus {
+.modal-sign-in-input:focus {
   border-color: #02897a; /* зелений при фокусі */
   outline: none; /* забирає стандартну синю обводку */
 }
 
-.modal-sing-in-label-checkbox {
+.modal-sign-in-label-checkbox {
   display: flex;
-  margin-bottom: 30px;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
 }
-.modal-sing-in-input-checkbox {
+.modal-sign-in-input-checkbox {
   margin-right: 10px;
 }
 
-.modal-sing-in-text {
+.modal-sign-in-text {
   color: #22343d;
 }
 
-.modal-sing-in-btn {
+.modal-sign-in-btn {
   border: 1px solid #bcd0e5;
   border-radius: 30px;
   width: 325px;
@@ -869,4 +899,166 @@ button {
   &:active {
     transform: scale(1.1);
   }
+}
+
+/* !================= MODAL - HEADER - SIGN-UP =================*/
+.backdrop-sign-up {
+  position: fixed;
+  background-color: rgba(46, 47, 66, 0.4);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-sign-up {
+  width: 500px;
+  min-height: 450px;
+  border-radius: 40px;
+  background-color: #fcfcfc;
+
+  position: relative;
+
+  padding: 72px 16px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+}
+
+.modal-sign-up-close-svg {
+  fill: #02897a;
+
+  &:hover {
+    fill: #5cbab4;
+  }
+}
+
+.modal-sign-up-close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 250ms ease;
+
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-delay: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.5);
+  }
+}
+
+.modal-sign-up-mail-box,
+.modal-sign-up-password-box {
+  position: relative;
+}
+
+.modal-sign-up-mail-svg,
+.modal-sign-up-password-svg {
+  position: absolute;
+  left: 13px;
+  z-index: 1;
+  top: 40%;
+  transform: translateY(-40%);
+  fill: #02897a;
+}
+
+.modal-sign-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-sign-up-title {
+  text-align: center;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.51;
+  color: #02897a;
+}
+
+.modal-sign-up-input {
+  border: 1px solid #bcd0e5;
+  border-radius: 30px;
+  width: 325px;
+  height: 48px;
+  padding: 10px 42px;
+  margin-bottom: 10px;
+
+  &::placeholder {
+    color: #02897a;
+  }
+}
+
+.modal-sign-up-input:focus {
+  border-color: #02897a; /* зелений при фокусі */
+  outline: none; /* забирає стандартну синю обводку */
+}
+
+.modal-sign-up-text {
+  color: #22343d;
+}
+
+.modal-sign-up-btn {
+  border: 1px solid #bcd0e5;
+  border-radius: 30px;
+  width: 325px;
+  height: 48px;
+
+  padding: 10px 42px;
+  background-color: #02897a;
+  color: white;
+
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-delay: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+  }
+}
+
+.modal-sign-up-text {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-sign-up-link {
+  color: 5cbab4;
+  text-decoration: underline;
 }
