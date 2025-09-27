@@ -1,6 +1,5 @@
 body {
   font-family: "Poppins", sans-serif;
-
   background-color: #fff;
 }
 
@@ -41,8 +40,7 @@ button {
   margin: 0 auto;
 }
 
-/* #region HEADER */
-
+/* !==============  HEADER ============== */
 .main-header .container {
   display: flex;
   align-items: center;
@@ -61,7 +59,6 @@ button {
   display: flex;
   align-items: center;
   gap: 16px;
-  /* line-height: 28px; */
   line-height: 0.93;
   color: #173a56;
 }
@@ -85,12 +82,12 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.main-header-link:hover,
-.main-header-link:focus,
-.main-header-link:active {
-  transform: scale(1.1);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+  }
 }
 
 .current {
@@ -115,13 +112,13 @@ button {
   transition-duration: 300ms;
   transition-delay: 0;
   transition-timing-function: ease;
-}
 
-.theme-btn:hover,
-.theme-btn:focus,
-.theme-btn:active {
-  transform: scale(1.1);
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
 .theme-btn-svg {
@@ -136,9 +133,6 @@ button {
   border-radius: 4px;
 }
 
-/* .main-header-btn:hover,.main-header-btn:focus{
-    background-color: #008080;
-} */
 .sign-in {
   color: #173a56;
   width: 105px;
@@ -149,14 +143,14 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.sign-in:hover,
-.sign-in:focus,
-.sign-in:active {
-  transform: scale(1.1);
-  background-color: #e0dfdf;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    background-color: #e0dfdf;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
 .sign-up {
@@ -168,19 +162,18 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    background-color: #5cbab4;
+    color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
-.sign-up:hover,
-.sign-up:focus,
-.sign-up:active {
-  transform: scale(1.1);
-  background-color: #5cbab4;
-  color: white;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-}
-/* #endregion */
-
-/* MAIN */
+/* !============== Section GREAT ============== */
 .great .container {
   display: flex;
   margin-top: 77px;
@@ -281,12 +274,7 @@ button {
   align-items: center;
 }
 
-/* .person-box-img {
-  position: relative;
-  display: inline-block;
-} */
-
-/* #region section STRATEGI */
+/* !============== Section STRATEGI ============== */
 .strategi {
   margin-top: 100px;
 }
@@ -381,7 +369,7 @@ button {
   margin-left: 8px;
 }
 
-/* #endregion */
+/* !============== Section CONTACT ============== */
 .contact .container {
   display: flex;
   flex-direction: column;
@@ -410,7 +398,7 @@ button {
   color: #374754;
   max-width: 332px;
 }
-/* ? */
+
 .contact-box {
   margin-top: 50px;
 }
@@ -487,11 +475,8 @@ button {
   color: #fff;
 }
 
-/* ? */
-
-/* ! */
-/* #region FOOTER */
-.footer .container {
+/* !================= FOOTER ================= */
+.footer > .container {
   display: flex;
   margin-top: 100px;
   justify-content: center;
@@ -525,12 +510,12 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.footer-social-item:hover,
-.footer-social-item:focus,
-.footer-social-item:active {
-  transform: scale(2);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(2);
+  }
 }
 
 .footer-social-list {
@@ -633,23 +618,22 @@ button {
 
   padding: 10px 42px;
   border: 1px solid #bcd0e5;
-}
 
-.footer-input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #02897a;
-}
+  &:hover,
+  &:focus {
+    border: 2px solid #5cbab4;
+  }
 
-.footer-input:hover,
-.footer-input:focus {
-  border: 2px solid #5cbab4;
-}
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #02897a;
+  }
 
-.footer-input:hover::placeholder,
-.footer-input:focus::placeholder {
-  color: #5cbab4;
+  &:hover::placeholder {
+    color: #5cbab4;
+  }
 }
 
 .footer-newsletter-btn {
@@ -667,18 +651,16 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.footer-newsletter-btn:hover,
-.footer-newsletter-btn:focus,
-.footer-newsletter-btn:active {
-  transform: scale(1.1);
-  color: white;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-  background-color: #5cbab4;
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    background-color: #5cbab4;
+  }
 }
-
-/* #endregion */
 
 /* !================= MODAL - HEADER - SIGN-IN =================*/
 

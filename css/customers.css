@@ -1,6 +1,5 @@
 body {
   font-family: "Poppins", sans-serif;
-
   background-color: #fff;
 }
 
@@ -41,8 +40,7 @@ button {
   margin: 0 auto;
 }
 
-/* #region HEADER */
-
+/* !================= HEADER ================= */
 .main-header .container {
   display: flex;
   align-items: center;
@@ -85,12 +83,12 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.main-header-link:hover,
-.main-header-link:focus,
-.main-header-link:active {
-  transform: scale(1.1);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+  }
 }
 
 .current {
@@ -114,13 +112,13 @@ button {
   transition-duration: 300ms;
   transition-delay: 0;
   transition-timing-function: ease;
-}
 
-.theme-btn:hover,
-.theme-btn:focus,
-.theme-btn:active {
-  transform: scale(1.1);
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
 .theme-btn-svg {
@@ -148,14 +146,14 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.sign-in:hover,
-.sign-in:focus,
-.sign-in:active {
-  transform: scale(1.1);
-  background-color: #e0dfdf;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    background-color: #e0dfdf;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
 .sign-up {
@@ -167,19 +165,18 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    background-color: #5cbab4;
+    color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
-.sign-up:hover,
-.sign-up:focus,
-.sign-up:active {
-  transform: scale(1.1);
-  background-color: #5cbab4;
-  color: white;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-}
-/* #endregion */
-
-/* #region section CLIENT */
+/* !=============== SECTION CLIENT  */
 .client .container {
   display: flex;
   justify-content: center;
@@ -212,18 +209,15 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.5);
+  }
 }
 
-.client-img:hover,
-.client-img:focus,
-.client-img:active {
-  transform: scale(1.5);
-}
-
-/* #endregion */
-
-/* #region section PRODUCT */
-
+/* !=============== SECTION Product  */
 .product {
   background-color: #f5f5f5;
   width: 100%;
@@ -274,13 +268,13 @@ button {
   transition-duration: 200ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.box-img:hover,
-.box-img:focus,
-.box-img:active {
-  transform: scale(1.3);
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.3);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
 .green {
@@ -324,10 +318,7 @@ button {
   padding-left: 37px;
 }
 
-/* #endregion */
-
-/* #region section WORK */
-
+/* !=============== SECTION Work  */
 .work .container {
   display: flex;
   flex-direction: column;
@@ -364,12 +355,12 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.work-img:hover,
-.work-img:focus,
-.work-img:active {
-  transform: scale(0.9);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 .work-item-text {
@@ -410,17 +401,16 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #5cbab4;
+    color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
-.button-work:hover {
-  transform: scale(1.1);
-  background-color: #5cbab4;
-  color: white;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-}
-/* #endregion */
-
-/* ! OFFER */
+/* !=============== SECTION Offer  */
 .offer {
   background: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
   margin-top: 115px;
@@ -463,12 +453,12 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.offer-img:hover,
-.offer-img:focus,
-.offer-img:active {
-  transform: scale(0.9);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 .offer-item-title {
@@ -494,8 +484,7 @@ button {
   color: #000;
 }
 
-/* ! */
-
+/* !=============== SECTION Join  */
 .join-container {
   display: flex;
   justify-content: center;
@@ -537,21 +526,20 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    background-color: #5cbab4;
+    color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
-.join-btn:hover,
-.join-btn:focus,
-.join-btn:active {
-  transform: scale(1.1);
-  background-color: #5cbab4;
-  color: white;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-}
-
-/* #endregion */
-
-/* #region FOOTER */
-.footer .container {
+/* !=============== FOOTER =============== */
+/* !================= FOOTER ================= */
+.footer > .container {
   display: flex;
   margin-top: 100px;
   justify-content: center;
@@ -585,12 +573,12 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.footer-social-item:hover,
-.footer-social-item:focus,
-.footer-social-item:active {
-  transform: scale(2);
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(2);
+  }
 }
 
 .footer-social-list {
@@ -692,23 +680,23 @@ button {
   height: 48px;
 
   padding: 10px 42px;
-}
+  border: 1px solid #bcd0e5;
 
-.footer-input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #02897a;
-}
+  &:hover,
+  &:focus {
+    border: 2px solid #5cbab4;
+  }
 
-.footer-input:hover,
-.footer-input:focus {
-  border: 2px solid #5cbab4;
-}
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #02897a;
+  }
 
-.footer-input:hover::placeholder,
-.footer-input:focus::placeholder {
-  color: #5cbab4;
+  &:hover::placeholder {
+    color: #5cbab4;
+  }
 }
 
 .footer-newsletter-btn {
@@ -726,18 +714,16 @@ button {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0;
-}
 
-.footer-newsletter-btn:hover,
-.footer-newsletter-btn:focus,
-.footer-newsletter-btn:active {
-  transform: scale(1.1);
-  color: white;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-  background-color: #5cbab4;
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.1);
+    color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    background-color: #5cbab4;
+  }
 }
-
-/* #endregion */
 
 /* !================= MODAL - HEADER - SIGN-IN =================*/
 
