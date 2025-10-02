@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
@@ -1114,6 +1118,9 @@ button {
   &:active {
     color: #02897a;
   }
+}
+
+.footer-newsletter-container {
 }
 
 .footer-newsletter-container {
