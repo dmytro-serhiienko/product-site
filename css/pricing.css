@@ -728,6 +728,8 @@ button {
   border-radius: 4px;
   width: 325px;
   height: 48px;
+    outline: none;
+
 
   padding: 10px 42px;
   border: 1px solid #bcd0e5;
@@ -1053,6 +1055,8 @@ button {
   height: 48px;
   padding: 10px 42px;
   margin-bottom: 10px;
+    outline: none;
+
 
   &::placeholder {
     color: #02897a;
